@@ -1,0 +1,291 @@
+Files DRL058.CMP and DRL548.CMP are identical
+Files DRL548.CMP and DRL848.CMP are identical
+Files DRL057.CMP and DRL547.CMP are identical
+Files DRL547.CMP and DRL847.CMP are identical
+Files DRL055.CMP and DRL545.CMP are identical
+Files DRL545.CMP and DRL845.CMP are identical
+Files DRL056.CMP and DRL546.CMP are identical
+Files DRL546.CMP and DRL846.CMP are identical
+Files DRL052.CMP and DRL217.CMP are identical
+Files DRL217.CMP and DRL219.CMP differ    <-- delay changed from 1.3, 1.5 to 1.7
+Files DRL219.CMP and DRL542.CMP differ    <-- delay changed from 1.7  back to 1.5
+Files DRL542.CMP and DRL842.CMP are identical
+Files DRL051.CMP and DRL216.CMP are identical
+Files DRL216.CMP and DRL218.CMP differ   <-- delay changed from 1.3, 1.5 to 1.7
+Files DRL218.CMP and DRL541.CMP differ   <-- delay changed from 1.7  back to 1.5
+Files DRL541.CMP and DRL841.CMP are identical
+Files DRL047.CMP and DRL214.CMP differ   <-- 214 has audio file removed
+Files DRL214.CMP and DRL513.CMP are identical
+Files DRL513.CMP and DRL531.CMP are identical
+Files DRL531.CMP and DRL537.CMP are identical
+Files DRL537.CMP and DRL831.CMP are identical
+Files DRL831.CMP and DRL837.CMP are identical
+Files DRL048.CMP and DRL213.CMP are identical
+Files DRL213.CMP and DRL538.CMP are identical
+Files DRL538.CMP and DRL838.CMP are identical
+Files DRL044.CMP and DRL211.CMP are identical
+Files DRL211.CMP and DRL534.CMP are identical
+Files DRL534.CMP and DRL834.CMP are identical
+Files DRL043.CMP and DRL210.CMP are identical
+Files DRL210.CMP and DRL533.CMP are identical
+Files DRL533.CMP and DRL833.CMP are identical
+Files DRL046.CMP and DRL536.CMP are identical
+Files DRL536.CMP and DRL836.CMP are identical
+Files DRL530.CMP and DRL830.CMP are identical
+Files DRL045.CMP and DRL535.CMP are identical
+Files DRL535.CMP and DRL835.CMP are identical
+Files DRL042.CMP and DRL212.CMP are identical
+Files DRL212.CMP and DRL532.CMP are identical
+Files DRL532.CMP and DRL832.CMP are identical
+Files DRL059.CMP and DRL215.CMP are identical
+Files DRL215.CMP and DRL549.CMP are identical
+Files DRL549.CMP and DRL849.CMP are identical
+Files DRL514.CMP and DRL814.CMP are identical
+Files DRL509.CMP and DRL809.CMP are identical
+Files DRL511.CMP and DRL811.CMP are identical
+Files DRL512.CMP and DRL812.CMP are identical
+Files DRL032.CMP and DRL522.CMP are identical
+Files DRL522.CMP and DRL822.CMP are identical
+Files DRL510.CMP and DRL810.CMP are identical
+Files DRL208.CMP and DRL998.CMP are identical
+Files DRL203.CMP and DRL993.CMP are identical
+Files DRL008.CMP and DRL147.CMP differ    <- Ball 5 changed from Easy to Hard; ball added at end
+Files DRL004.CMP and DRL127.CMP are identical
+Files DRL003.CMP and DRL128.CMP are identical
+Files DRL121.CMP and DRL251.CMP are identical
+Files DRL251.CMP and DRL911.CMP are identical
+Files DRL202.CMP and DRL992.CMP are identical
+Files DRL207.CMP and DRL997.CMP are identical
+Files DRL074.CMP and DRL564.CMP are identical
+Files DRL564.CMP and DRL864.CMP are identical
+Files DRL072.CMP and DRL562.CMP are identical
+Files DRL562.CMP and DRL862.CMP are identical
+Files DRL073.CMP and DRL563.CMP are identical
+Files DRL563.CMP and DRL863.CMP are identical
+Files DRL559.CMP and DRL859.CMP are identical
+Files DRL075.CMP and DRL565.CMP are identical
+Files DRL565.CMP and DRL865.CMP are identical
+Files DRL758.CMP and DRL858.CMP are identical
+Files DRL067.CMP and DRL557.CMP are identical
+Files DRL009.CMP and DRL010.CMP differ   <-- all 24 shot_types changed
+Files DRL752.CMP and DRL852.CMP are identical
+Files DRL062.CMP and DRL225.CMP are identical
+Files DRL225.CMP and DRL552.CMP are identical
+Files DRL071.CMP and DRL561.CMP are identical
+Files DRL561.CMP and DRL861.CMP are identical
+Files DRL750.CMP and DRL850.CMP are identical
+Files DRL751.CMP and DRL851.CMP are identical
+Files DRL060.CMP and DRL220.CMP are identical
+Files DRL220.CMP and DRL550.CMP are identical
+Files DRL001.CMP and DRL061.CMP are identical
+Files DRL061.CMP and DRL143.CMP differ       <-- many differences; top-spin changed to ground
+Files DRL143.CMP and DRL222.CMP differ       <-- many differences; ground changed to topspin
+Files DRL222.CMP and DRL551.CMP are identical
+Files DRL244.CMP and DRL584.CMP are identical
+Files DRL584.CMP and DRL884.CMP are identical
+Files DRL240.CMP and DRL241.CMP differ   <-- start of 2-line mini tennis Boomer on
+Files DRL241.CMP and DRL242.CMP differ      <-- many differences, including descriptions
+Files DRL242.CMP and DRL243.CMP differ
+Files DRL243.CMP and DRL245.CMP differ
+Files DRL245.CMP and DRL580.CMP differ
+Files DRL580.CMP and DRL582.CMP differ
+Files DRL582.CMP and DRL583.CMP differ
+Files DRL583.CMP and DRL585.CMP differ
+Files DRL585.CMP and DRL880.CMP differ
+Files DRL880.CMP and DRL881.CMP differ
+Files DRL881.CMP and DRL882.CMP differ
+Files DRL882.CMP and DRL883.CMP differ
+Files DRL883.CMP and DRL885.CMP differ
+Files DRL063.CMP and DRL224.CMP are identical
+Files DRL224.CMP and DRL553.CMP are identical
+Files DRL753.CMP and DRL853.CMP are identical
+Files DRL757.CMP and DRL857.CMP are identical
+Files DRL076.CMP and DRL223.CMP are identical
+Files DRL223.CMP and DRL566.CMP are identical
+Files DRL566.CMP and DRL866.CMP are identical
+Files DRL002.CMP and DRL064.CMP are identical
+Files DRL064.CMP and DRL221.CMP are identical
+Files DRL221.CMP and DRL554.CMP are identical
+Files DRL755.CMP and DRL855.CMP are identical
+Files DRL754.CMP and DRL854.CMP are identical
+Files DRL020.CMP and DRL028.CMP differ       <-- delays decreased, audio removed
+Files DRL070.CMP and DRL077.CMP are identical
+Files DRL077.CMP and DRL560.CMP are identical
+Files DRL560.CMP and DRL567.CMP are identical
+Files DRL567.CMP and DRL860.CMP are identical
+Files DRL860.CMP and DRL867.CMP are identical
+Files DRL150.CMP and DRL940.CMP are identical
+Files DRL161.CMP and DRL951.CMP are identical
+Files DRL151.CMP and DRL941.CMP are identical
+Files DRL162.CMP and DRL952.CMP are identical
+Files DRL201.CMP and DRL991.CMP are identical
+Files DRL206.CMP and DRL996.CMP are identical
+Files DRL205.CMP and DRL995.CMP are identical
+Files DRL200.CMP and DRL990.CMP are identical
+Files DRL082.CMP and DRL232.CMP are identical
+Files DRL232.CMP and DRL572.CMP are identical
+Files DRL572.CMP and DRL872.CMP are identical
+Files DRL081.CMP and DRL231.CMP are identical
+Files DRL231.CMP and DRL571.CMP are identical
+Files DRL571.CMP and DRL871.CMP are identical
+Files DRL080.CMP and DRL230.CMP are identical
+Files DRL230.CMP and DRL570.CMP are identical
+Files DRL570.CMP and DRL870.CMP are identical
+Files DRL586.CMP and DRL886.CMP are identical
+Files DRL152.CMP and DRL942.CMP are identical
+Files DRL163.CMP and DRL953.CMP are identical
+Files DRL153.CMP and DRL943.CMP are identical
+Files DRL164.CMP and DRL954.CMP are identical
+Files DRL083.CMP and DRL573.CMP are identical
+Files DRL573.CMP and DRL873.CMP are identical
+Files DRL587.CMP and DRL887.CMP are identical
+Files DRL084.CMP and DRL250.CMP are identical
+Files DRL250.CMP and DRL300.CMP are identical
+Files DRL300.CMP and DRL574.CMP are identical
+Files DRL574.CMP and DRL874.CMP are identical
+Files DRL154.CMP and DRL944.CMP are identical
+Files DRL165.CMP and DRL955.CMP are identical
+Files DRL155.CMP and DRL945.CMP are identical
+Files DRL166.CMP and DRL956.CMP are identical
+Files DRL209.CMP and DRL999.CMP are identical
+Files DRL204.CMP and DRL994.CMP are identical
+Files DRL588.CMP and DRL888.CMP are identical
+Files DRL156.CMP and DRL946.CMP are identical
+Files DRL167.CMP and DRL957.CMP are identical
+Files DRL157.CMP and DRL947.CMP are identical
+Files DRL168.CMP and DRL958.CMP are identical
+Files DRL158.CMP and DRL948.CMP are identical
+Files DRL169.CMP and DRL959.CMP are identical
+Files DRL159.CMP and DRL949.CMP are identical
+Files DRL170.CMP and DRL960.CMP are identical
+Files DRL160.CMP and DRL950.CMP are identical
+Files DRL171.CMP and DRL961.CMP are identical
+Files DRL505.CMP and DRL805.CMP are identical
+Files DRL517.CMP and DRL817.CMP are identical
+Files DRL140.CMP and DRL930.CMP are identical
+Files DRL141.CMP and DRL931.CMP are identical
+Files DRL136.CMP and DRL926.CMP are identical
+Files DRL135.CMP and DRL925.CMP are identical
+Files DRL506.CMP and DRL806.CMP are identical
+Files DRL255.CMP and DRL891.CMP differ
+Files DRL103.CMP and DRL893.CMP are identical
+Files DRL518.CMP and DRL818.CMP are identical
+Files DRL124.CMP and DRL914.CMP are identical
+Files DRL122.CMP and DRL912.CMP are identical
+Files DRL125.CMP and DRL915.CMP are identical
+Files DRL104.CMP and DRL256.CMP differ
+Files DRL256.CMP and DRL894.CMP differ
+Files DRL119.CMP and DRL909.CMP are identical
+Files DRL123.CMP and DRL913.CMP are identical
+Files DRL005.CMP and DRL129.CMP are identical
+Files DRL129.CMP and DRL801.CMP differ
+Files DRL065.CMP and DRL555.CMP are identical
+Files DRL066.CMP and DRL556.CMP are identical
+Files DRL756.CMP and DRL856.CMP are identical
+Files DRL526.CMP and DRL826.CMP are identical
+Files DRL527.CMP and DRL827.CMP are identical
+Files DRL515.CMP and DRL815.CMP are identical
+Files DRL033.CMP and DRL523.CMP are identical
+Files DRL523.CMP and DRL823.CMP are identical
+Files DRL266.CMP and DRL271.CMP are identical
+Files DRL114.CMP and DRL904.CMP are identical
+Files DRL267.CMP and DRL272.CMP are identical
+Files DRL115.CMP and DRL905.CMP are identical
+Files DRL508.CMP and DRL808.CMP are identical
+Files DRL039.CMP and DRL078.CMP differ
+Files DRL303.CMP and DRL304.CMP differ
+Files DRL006.CMP and DRL145.CMP are identical
+Files DRL145.CMP and DRL802.CMP differ
+Files DRL504.CMP and DRL804.CMP are identical
+Files DRL054.CMP and DRL544.CMP are identical
+Files DRL544.CMP and DRL844.CMP are identical
+Files DRL053.CMP and DRL543.CMP are identical
+Files DRL543.CMP and DRL843.CMP are identical
+Files DRL507.CMP and DRL807.CMP are identical
+Files DRL247.CMP and DRL297.CMP are identical
+Files DRL248.CMP and DRL298.CMP are identical
+Files DRL249.CMP and DRL299.CMP are identical
+Files DRL254.CMP and DRL890.CMP are identical
+Files DRL102.CMP and DRL261.CMP are identical
+Files DRL261.CMP and DRL892.CMP are identical
+Files DRL113.CMP and DRL279.CMP are identical
+Files DRL279.CMP and DRL903.CMP are identical
+Files DRL111.CMP and DRL277.CMP are identical
+Files DRL277.CMP and DRL901.CMP are identical
+Files DRL109.CMP and DRL275.CMP are identical
+Files DRL275.CMP and DRL899.CMP are identical
+Files DRL110.CMP and DRL276.CMP are identical
+Files DRL276.CMP and DRL900.CMP are identical
+Files DRL108.CMP and DRL274.CMP are identical
+Files DRL274.CMP and DRL898.CMP are identical
+Files DRL112.CMP and DRL902.CMP are identical
+Files DRL173.CMP and DRL963.CMP are identical
+Files DRL175.CMP and DRL965.CMP are identical
+Files DRL177.CMP and DRL967.CMP are identical
+Files DRL179.CMP and DRL969.CMP are identical
+Files DRL181.CMP and DRL971.CMP are identical
+Files DRL183.CMP and DRL973.CMP are identical
+Files DRL185.CMP and DRL975.CMP are identical
+Files DRL187.CMP and DRL977.CMP are identical
+Files DRL189.CMP and DRL979.CMP are identical
+Files DRL191.CMP and DRL981.CMP are identical
+Files DRL193.CMP and DRL983.CMP differ
+Files DRL172.CMP and DRL962.CMP are identical
+Files DRL174.CMP and DRL964.CMP are identical
+Files DRL176.CMP and DRL966.CMP are identical
+Files DRL178.CMP and DRL968.CMP are identical
+Files DRL180.CMP and DRL970.CMP are identical
+Files DRL182.CMP and DRL972.CMP are identical
+Files DRL184.CMP and DRL974.CMP are identical
+Files DRL186.CMP and DRL976.CMP are identical
+Files DRL188.CMP and DRL978.CMP are identical
+Files DRL190.CMP and DRL980.CMP are identical
+Files DRL192.CMP and DRL982.CMP are identical
+Files DRL516.CMP and DRL816.CMP are identical
+Files DRL034.CMP and DRL524.CMP are identical
+Files DRL524.CMP and DRL824.CMP are identical
+Files DRL107.CMP and DRL897.CMP are identical
+Files DRL106.CMP and DRL273.CMP differ
+Files DRL273.CMP and DRL896.CMP differ
+Files DRL139.CMP and DRL929.CMP are identical
+Files DRL105.CMP and DRL263.CMP differ
+Files DRL263.CMP and DRL895.CMP differ
+Files DRL007.CMP and DRL146.CMP are identical
+Files DRL146.CMP and DRL503.CMP differ
+Files DRL503.CMP and DRL803.CMP are identical
+Files DRL117.CMP and DRL269.CMP differ
+Files DRL269.CMP and DRL907.CMP differ
+Files DRL116.CMP and DRL906.CMP are identical
+Files DRL118.CMP and DRL270.CMP differ
+Files DRL270.CMP and DRL908.CMP differ
+Files DRL120.CMP and DRL910.CMP are identical
+Files DRL132.CMP and DRL922.CMP are identical
+Files DRL137.CMP and DRL927.CMP are identical
+Files DRL134.CMP and DRL924.CMP are identical
+Files DRL133.CMP and DRL923.CMP are identical
+Files DRL130.CMP and DRL288.CMP are identical
+Files DRL288.CMP and DRL920.CMP are identical
+Files DRL030.CMP and DRL520.CMP are identical
+Files DRL520.CMP and DRL820.CMP are identical
+Files DRL086.CMP and DRL088.CMP differ
+Files DRL088.CMP and DRL386.CMP differ
+Files DRL036.CMP and DRL336.CMP differ
+Files DRL085.CMP and DRL385.CMP are identical
+Files DRL385.CMP and DRL388.CMP differ
+Files DRL087.CMP and DRL387.CMP differ
+Files DRL387.CMP and DRL389.CMP differ
+Files DRL037.CMP and DRL337.CMP differ
+Files DRL029.CMP and DRL519.CMP are identical
+Files DRL519.CMP and DRL819.CMP are identical
+Files DRL035.CMP and DRL525.CMP are identical
+Files DRL525.CMP and DRL825.CMP are identical
+Files DRL227.CMP and DRL228.CMP differ
+Files DRL228.CMP and DRL840.CMP differ
+Files DRL049.CMP and DRL226.CMP are identical
+Files DRL226.CMP and DRL839.CMP are identical
+Files DRL031.CMP and DRL521.CMP are identical
+Files DRL521.CMP and DRL821.CMP are identical
+Files DRL000.CMP and DRL149.CMP are identical
+Files DRL138.CMP and DRL928.CMP are identical
+Files DRL131.CMP and DRL289.CMP are identical
+Files DRL289.CMP and DRL921.CMP are identical

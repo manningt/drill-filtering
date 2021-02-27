@@ -1,5 +1,10 @@
 # makes lists for shottype and rotary lookups
 from drill_file_defines import *
+
+BALL_CFG_LABELS = [SHOTTYPE_DF, LEVEL_DF, ROTARY_TYPE_DF, SCORE_METHOD_DF, DELAY_DF,\
+   SPEED_DF, SPIN_DF , ELEVATION_DF, AUDIO_DF]
+
+
 SHOTTYPE_NAME_LIST = [ \
 SERVE_NAME_SHOTTYPE, \
 DROP_NAME_SHOTTYPE, \

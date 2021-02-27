@@ -9,20 +9,20 @@ extern "C" {
 
 //-=-=- start of exported defines
 //fields:
-#define DF_NAME "NAME: "
+#define NAME_DF "NAME: "
 #define DESC_START "[DESCRIPTION_START]"
 #define DESC_END "[DESCRIPTION_END]"
-#define DF_INTRO_AUDIO "INTRO_AUDIO: "
-#define DF_BALL "[BALL]"
-#define DF_SHOT_TYPE "SHOT_TYPE: "
-#define DF_LEVEL "LEVEL: "
-#define DF_ROTARY_TYPE "ROTARY_TYPE: "
-#define DF_SCORE_METHOD "SCORE_METHOD: "   // drill_balls[ball_number].cost
-#define DF_DELAY "DELAY: "
-#define DF_SPEED "SPEED: "
-#define DF_SPIN "SPIN: "
-#define DF_ELEVATION "ELEVATION: "        // drill_balls[ball_number].y_ang
-#define DF_AUDIO "AUDIO: "
+#define INTRO_AUDIO_DF "INTRO_AUDIO: "
+#define BALL_DF "[BALL]"
+#define SHOTTYPE_DF "SHOT_TYPE: "
+#define LEVEL_DF "LEVEL: "
+#define ROTARY_TYPE_DF "ROTARY_TYPE: "
+#define SCORE_METHOD_DF "SCORE_METHOD: "   // drill_balls[ball_number].cost
+#define DELAY_DF "DELAY: "
+#define SPEED_DF "SPEED: "
+#define SPIN_DF "SPIN: "
+#define ELEVATION_DF "ELEVATION: "        // drill_balls[ball_number].y_ang
+#define AUDIO_DF "AUDIO: "
 
 // BALLTYPE_, ROTTYPE_ and LEVEL_ in calc_ball.h
 

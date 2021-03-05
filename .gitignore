@@ -6,3 +6,8 @@
 /drills_with_floating_pt_levels.txt
 /remove-audit.txt
 /drill_list_w_details.py
+/score_name*
+/dups_diff-output.txt
+/diff-dup-drills.sh
+/same_name_diff*
+/drills-ground-hand*

@@ -1,3 +1,16 @@
+#!/bin/bash
+# throw-away script for tie vs tiebreaker
+diff DRL280.CMP DRL186.CMP >> /tmp/tie-diff.txt
+diff DRL281.CMP DRL187.CMP >> /tmp/tie-diff.txt
+diff DRL282.CMP DRL188.CMP >> /tmp/tie-diff.txt
+diff DRL283.CMP DRL189.CMP >> /tmp/tie-diff.txt
+diff DRL284.CMP DRL190.CMP >> /tmp/tie-diff.txt
+diff DRL285.CMP DRL191.CMP >> /tmp/tie-diff.txt
+diff DRL286.CMP DRL192.CMP >> /tmp/tie-diff.txt
+# the previous lines show that 280..286 are duplicates of 186..192
+diff DRL287.CMP DRL193.CMP >> /tmp/tie-diff.txt  -> scoring is 11 vs 13 on line 45
+
+
 Files DRL058.CMP and DRL548.CMP are identical
 Files DRL548.CMP and DRL848.CMP are identical
 Files DRL057.CMP and DRL547.CMP are identical

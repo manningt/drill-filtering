@@ -235,14 +235,6 @@ drill_list = [\
 {'id': '270', 'name': 'Volley Volley Lob Topspin'},\
 {'id': '273', 'name': 'Transition FH approach'},\
 {'id': '278', 'name': 'Dartmouth Tie FH flat'},\
-{'id': '280', 'name': 'Tie FH 5.5'},\
-{'id': '281', 'name': 'Tie BH 5.5'},\
-{'id': '282', 'name': 'Tie FH 6.0'},\
-{'id': '283', 'name': 'Tie BH 6.0'},\
-{'id': '284', 'name': 'Tie FH 6.5'},\
-{'id': '285', 'name': 'Tie BH 6.5'},\
-{'id': '286', 'name': 'Tie FH 7.0'},\
-{'id': '287', 'name': 'Tie BH 7.0'},\
 {'id': '290', 'name': 'womens x drill no camera'},\
 {'id': '291', 'name': "Women's Lob Volley Flat"},\
 {'id': '292', 'name': 'Womens lob volley no camera'},\

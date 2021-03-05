@@ -9,20 +9,20 @@ Files DRL061.CMP and DRL143.CMP differ       <-- many differences; top-spin chan
 Files DRL143.CMP and DRL222.CMP differ       <-- many differences; ground changed to topspin
 Files DRL240.CMP and DRL241.CMP differ   <-- start of 2-line mini tennis Boomer on
 Files DRL241.CMP and DRL242.CMP differ      <-- many differences, including descriptions
-Files DRL242.CMP and DRL243.CMP differ
-Files DRL243.CMP and DRL245.CMP differ
+Files DRL242.CMP and DRL243.CMP differ <- ball 1 changed from F5 to F2; ball 2: B5 to B2
+Files DRL243.CMP and DRL245.CMP differ  <-- 245 is end of mini tennis; level changed to 2
 Files DRL245.CMP and DRL580.CMP differ
 Files DRL580.CMP and DRL582.CMP differ
 Files DRL582.CMP and DRL583.CMP differ
 Files DRL583.CMP and DRL585.CMP differ
 Files DRL585.CMP and DRL880.CMP differ
-Files DRL880.CMP and DRL881.CMP differ
-Files DRL881.CMP and DRL882.CMP differ
-Files DRL882.CMP and DRL883.CMP differ
-Files DRL883.CMP and DRL885.CMP differ
+Files DRL880.CMP and DRL881.CMP differ <- height reduced, spin reduced to 0, speed increased on all 11 balls
+Files DRL881.CMP and DRL882.CMP differ <- height reduced, changed from B54 to B5, speed increased on first 4 balls
+Files DRL882.CMP and DRL883.CMP differ <- ball 1 changed from F5 to F2; ball 2: B5 to B2
+Files DRL883.CMP and DRL885.CMP differ <- first 4 balls: height increased, level=2; speed reduced a small amount; delay increased
 Files DRL020.CMP and DRL028.CMP differ       <-- delays decreased, audio removed
 Files DRL255.CMP and DRL891.CMP differ
-Files DRL104.CMP and DRL256.CMP differ
+Files DRL104.CMP and DRL256.CMP differ <- score_method changed from 10/11 to (ground) and delay increased by 100 mSec.
 Files DRL256.CMP and DRL894.CMP differ
 Files DRL129.CMP and DRL801.CMP differ
 Files DRL039.CMP and DRL078.CMP differ

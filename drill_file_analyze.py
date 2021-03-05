@@ -16,73 +16,86 @@ import os
 from drill_file_defines import *
 from drill_file_defines_adjunct import *
 from drill_file_parser import parse_drill_file
-from drill_titles_no_dups import drill_list
+from drill_list_w_details import drill_list
 
 if __name__ == "__main__":
-   # fname = "DRL973"
-   DRILL_PATH = '/Users/tom/Documents/Projects/Boomer/infrastructure/drills/'
-   drill_list = [{'id': '000', 'name': 'speed test'},\
-                  {'id': '001', 'name': '2-line groundstroke footwork'}]
 
-   for i, drill in enumerate(drill_list):
-      fname = "DRL" + drill["id"]
-      parse_error_string, drill_name, drill_desc, intro_audio, ball_list \
-         = parse_drill_file(DRILL_PATH + fname + ".CMP")
-      if parse_error_string is not None:
-         print("File {}: Parse {}".format(fname, parse_error_string))
-      elif len(ball_list) == 0:
-         print("File {} Error: no balls configured ".format(fname))
+   analyze_scoring_methods = True
+   if analyze_scoring_methods:
+      drills_w_score_methods_id = []
+      drills_w_score_methods_name = []
+      drills_w_score_methods_set = []
+      for i, drill in enumerate(drill_list):
+         score_set = set()
+         for j, ball_cfg in enumerate(drill['balls']):
+            score_set.add(ball_cfg[SCORE_METHOD_DF[:-2]])
+         drills_w_score_methods_id.append(drill["id"])
+         drills_w_score_methods_name.append(drill["name"])
+         drills_w_score_methods_set.append(score_set)
 
-      
-
-      stats = {}
-      for label in BALL_CFG_LABELS:
-         stats[label[:-2]] = {"count": 0, "min": 0,"max": 0}
-
-      for j, ball_cfg in enumerate(ball_list):
-         for label in BALL_CFG_LABELS:
-            if label[:-2] in ball_cfg:
-               stats[label[:-2]]["count"] += 1
-               if ball_cfg[label[:-2]]
-      
-      drill_list[i]["stats"] = stats
-
-   for i, drill in enumerate(drill_list):
-      print("{}".format(drill))
-
-
-   # ----- write reports/files:
-   write_file = False
-   if write_file:
-      MyFile=open("drill_analysis_report.txt",'w')
-      # escaped quotes around the string make it so the commas aren't handled as column delimiters
-
-      MyFile.write("NAME,\"{}\"\n".format(drill_name))
-      MyFile.write("DESC,\"{}\"\n".format(drill_desc))
-      MyFile.write("INTRO,{}\n".format(intro_audio))
-      # write header row
-      csv_line = ","
-      for i in range(len(ball_list)):
-         csv_line += "{}".format(i+1)
-         if i < len(ball_list)-1:
-            csv_line += ","
-         else:
-            csv_line += "\n"
-      MyFile.write(csv_line)
-      # write other row for each drill
-      for label in BALL_CFG_LABELS:
-         label_has_values = False
-         csv_line = label[:-2] + ","
-         for i, ball_cfg in enumerate(ball_list):
-            if label[:-2] in ball_cfg:
-               csv_line += ball_cfg[label[:-2]]
-               label_has_values = True
-            if i < len(ball_list)-1:
-               csv_line += ","
-            else:
-               csv_line += "\n"
-         if label_has_values:
-            MyFile.write(csv_line)
+      fname = "score_methods"
+      MyFile=open(fname + ".csv",'w')
+      MyFile.write("id,name,methods\n")
+      for j in range(len(drills_w_score_methods_id)):
+         MyFile.write("{},\"{}\",\"{}\"\n".format(drills_w_score_methods_id[j], \
+            drills_w_score_methods_name[j], drills_w_score_methods_set[j] ))
       MyFile.close()
 
-   print("'{}' had {} ball configurations".format(drill_name, len(ball_list)))
+
+   analyze_custom_and_ball_counts = False
+   if analyze_custom_and_ball_counts:
+      THREE_BALL_COUNT = 3
+      drills_w_less_than_3_balls_id = []
+      drills_w_less_than_3_balls_name = []
+      FOUR_BALL_COUNT = 4
+      drills_w_less_than_4_balls_id = []
+      drills_w_less_than_4_balls_name = []
+      drills_w_custom_balls = []
+      drills_w_custom_ball_incomplete = []
+      for i, drill in enumerate(drill_list):
+         if len(drill["balls"]) < THREE_BALL_COUNT:
+            drills_w_less_than_3_balls_id.append(drill["id"])
+            drills_w_less_than_3_balls_name.append(drill["name"])
+         elif len(drill["balls"]) < FOUR_BALL_COUNT:
+            drills_w_less_than_4_balls_id.append(drill["id"])
+            drills_w_less_than_4_balls_name.append(drill["name"])
+         for j, ball_cfg in enumerate(drill["balls"]):
+            if CUSTOM_NAME_BALLTYPE == ball_cfg[SHOTTYPE_DF[:-2]]:
+               if j == 0:
+                  drills_w_custom_balls.append(drill["id"])
+               if SPEED_DF[:-2] not in ball_cfg or \
+                  SPIN_DF[:-2] not in ball_cfg or \
+                  ELEVATION_DF[:-2] not in ball_cfg:
+                  print("custom ball doesn't have all params configurated: Drill: {}".format(drill["id"]))
+                  sys.exit(0)
+
+      print("\n--- Drills with less than {} balls".format(THREE_BALL_COUNT))
+      for j in range(len(drills_w_less_than_3_balls_id)):
+         print("{} {}".format(drills_w_less_than_3_balls_id[j], drills_w_less_than_3_balls_name[j]))
+      print("--- Drills with less than {} balls".format(FOUR_BALL_COUNT))
+      for j in range(len(drills_w_less_than_4_balls_id)):
+         print("{} {}".format(drills_w_less_than_4_balls_id[j], drills_w_less_than_4_balls_name[j]))
+      print("Number of drills with custom balls: {}".format(len(drills_w_custom_balls)))
+
+   analyze_all = False
+   if analyze_all:
+      for i, drill in enumerate(drill_list):
+         stats = {}
+         for label in BALL_CFG_LABELS:
+            stats[label[:-2]] = {"count": 0, "min": 0,"max": 0}
+
+         for j, ball_cfg in enumerate(ball_list):
+            for label in BALL_CFG_LABELS:
+               if label[:-2] in ball_cfg:
+                  stats[label[:-2]]["count"] += 1
+                  # if ball_cfg[label[:-2]]:
+                  #    if type(var) is int:
+         
+         drill_list[i]["stats"] = stats
+
+      for i, drill in enumerate(drill_list):
+         print("{}".format(drill))
+
+
+
+   # print("'{}' had {} ball configurations".format(drill_name, len(ball_list)))

@@ -52,24 +52,25 @@ def parse_drill_file(fname):
             # sys.exit()
       if re.match(INTRO_AUDIO_DF, line, re.IGNORECASE):
          intro_audio = line[len(INTRO_AUDIO_DF):].strip()
+         line = ""
+         #skip blank lines
+         while (len(line) < 2):
+            line = f.readline()
 
       drill_eof = False
-      line = ""
-      #skip blank lines
-      while (len(line) < 2):
-         line = f.readline()
-         if len(line) == 0:
-            drill_eof = True
-
-      readline_count = 1
-      ball_params = {}
+      ball_params = None
+      ball_line_count = 1
       # collect ball configs
       while not drill_eof:
-         # print("Line {}: {}".format(readline_count, line))
+         # print("Line {}: {}".format(ball_line_count, line))
          line = line.upper()
-         if BALL_DF in line:
-            if len(ball_params) > 0:
+         if len(line) == 0:
+            drill_eof = True
+         if BALL_DF in line or drill_eof:
+            if ball_params is not None:
                ball_list.append(ball_params)
+               if len(ball_list) == 0:
+                  print("Ball {} has no parameters!".format(len(ball_list)))
             ball_params = {}
          else:
             line = line.strip()
@@ -77,13 +78,15 @@ def parse_drill_file(fname):
                if label in line:
                   ball_params[label[:-2]] = line[len(label):]
                   break
-         # read lines until next param
-         line = ""
-         while (len(line) < 2):
-            line = f.readline()
-            readline_count += 1
-            if len(line) == 0:
-               drill_eof = True
-               break
+         if drill_eof:
+            break
+         else:
+            # read lines until next param
+            line = ""
+            while (len(line) < 2):
+               line = f.readline()
+               ball_line_count += 1
+               if len(line) == 0:
+                  break
 
    return (None, drill_name, drill_desc, intro_audio, ball_list)

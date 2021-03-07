@@ -44,8 +44,16 @@ if __name__ == "__main__":
          sys.exit(1)
       
       drill_name.append(name)
-      drill_desc.append(desc)
-      intro_audio.append(intro_audio_t)
+      # print("desc: '{}'".format(drill_desc[0]))
+      if desc is not None:
+         drill_desc.append(desc)
+      else:
+         drill_desc.append("")
+         
+      if intro_audio_t is not None:
+         intro_audio.append(intro_audio_t)
+      else: 
+         intro_audio.append("No intro audio")
       ball_list.append(ball_list_t)
 
    verbose = False
@@ -58,6 +66,16 @@ if __name__ == "__main__":
       print("{:<9s}{:<14s}{:<32s}{:<32s}".format("","name: ",drill_name[0], drill_name[1]))
    elif verbose:
       print("Drill NAMEs are the same: {}".format(drill_name[0]))
+
+   if drill_desc[0] != drill_desc[1]:
+      print("{:<9s}{:<14s}{:<32s}{:<32s}".format("","desc: ",drill_desc[0], drill_desc[1]))
+   elif verbose:
+      print("Drill DESC are the same: {}".format(drill_desc[0]))
+
+   if intro_audio[0] != intro_audio[1]:
+      print("{:<9s}{:<14s}{:<32s}{:<32s}".format("","intro audio: ",intro_audio[0], intro_audio[1]))
+   elif verbose:
+      print("Intro Audio's are the same: {}".format(intro_audio[0]))
 
    ball_cfg_count = len(ball_list[0])
    if len(ball_list[0]) != len(ball_list[1]):

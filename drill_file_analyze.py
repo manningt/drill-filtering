@@ -20,7 +20,81 @@ from drill_list_w_details import drill_list
 
 if __name__ == "__main__":
 
-   analyze_scoring_methods = True
+   analyze_desc = True
+   if analyze_desc:
+      w_desc = []
+      w_desc_none = []
+      wo_desc = []
+      for i, drill in enumerate(drill_list):
+         if drill['desc'] is None:
+            w_desc_none.append(drill['id'])
+         elif len(drill['desc']) > 1:
+            w_desc.append(drill['id'])
+         else:
+            wo_desc.append(drill['id'])
+      print("---\nDrills without a description block: {}".format(w_desc_none))
+      print("Drills with a description:\n{}".format(w_desc))
+      print("\n{} drills do not have a description.\n".format(len(wo_desc)))
+
+
+   analyze_levels = False
+   if analyze_levels:
+      from enum import IntEnum
+      class difficulty(IntEnum):
+         same = 0
+         easy = 1
+         hard = 2
+
+      # word_level means easy, hard, same
+      single_word_level_count = [0] * 3
+      single_word_level_list = []
+      for i in range(0,3):
+         single_word_level_list.append([])
+      numeric_level_count = [0] * 14
+      multiple_level_count = 0
+      no_level_count = 0
+      sets_list = []
+      sets_count = []
+      drills_per_set = [] # a list of lists
+      for i, drill in enumerate(drill_list):
+         level_set = set()
+         for j, ball_cfg in enumerate(drill['balls']):
+            level_set.add(ball_cfg[LEVEL_DF[:-2]].lower())
+         if len(level_set) == 0:
+            no_level_count += 1
+         elif len(level_set) == 1:
+            if 'easy' in level_set:
+               single_word_level_count[difficulty.easy] += 1
+               single_word_level_list[difficulty.easy].append(drill['id'])
+            if 'hard' in level_set:
+               single_word_level_count[difficulty.hard] += 1
+               single_word_level_list[difficulty.hard].append(drill['id'])
+            if 'same' in level_set:
+               single_word_level_count[difficulty.same] += 1
+         else:
+            multiple_level_count += 1
+            new_set = True
+            for s in range(len(sets_list)):
+               if sets_list[s] == level_set:
+                  sets_count[s] += 1
+                  drills_per_set[s].append(drill['id'])
+                  new_set = False
+            if new_set:
+               sets_list.append(level_set)
+               sets_count.append(1)
+               drills_per_set.append([(drill['id'])])
+
+      print("---\nOut of {} drills:".format(len(drill_list)))
+      print("Exclusively same: {}  easy: {}  hard: {}".format(single_word_level_count[difficulty.same], \
+         single_word_level_count[difficulty.easy], single_word_level_count[difficulty.hard]))
+      print("List of exclusively hard: {}    List of exclusively easy: {}".format(single_word_level_list[difficulty.hard], \
+         single_word_level_list[difficulty.easy]))
+      print("No levels: {}  Multiple levels {}".format(no_level_count , multiple_level_count ))
+      for s in range(len(sets_list)):
+         print("Set: {} used in {} drills; ids: {}".format(sets_list[s], sets_count[s], drills_per_set[s]))
+      
+
+   analyze_scoring_methods = False
    if analyze_scoring_methods:
       drills_w_score_methods_id = []
       drills_w_score_methods_name = []
@@ -77,25 +151,3 @@ if __name__ == "__main__":
          print("{} {}".format(drills_w_less_than_4_balls_id[j], drills_w_less_than_4_balls_name[j]))
       print("Number of drills with custom balls: {}".format(len(drills_w_custom_balls)))
 
-   analyze_all = False
-   if analyze_all:
-      for i, drill in enumerate(drill_list):
-         stats = {}
-         for label in BALL_CFG_LABELS:
-            stats[label[:-2]] = {"count": 0, "min": 0,"max": 0}
-
-         for j, ball_cfg in enumerate(ball_list):
-            for label in BALL_CFG_LABELS:
-               if label[:-2] in ball_cfg:
-                  stats[label[:-2]]["count"] += 1
-                  # if ball_cfg[label[:-2]]:
-                  #    if type(var) is int:
-         
-         drill_list[i]["stats"] = stats
-
-      for i, drill in enumerate(drill_list):
-         print("{}".format(drill))
-
-
-
-   # print("'{}' had {} ball configurations".format(drill_name, len(ball_list)))

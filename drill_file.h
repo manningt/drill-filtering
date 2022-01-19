@@ -25,18 +25,8 @@ extern "C" {
 #define AUDIO_DF "AUDIO: "
 
 // the values for BALLTYE and ROTTYPE are in calc_ball.h, but not the names
-#define SERVE_NAME_BALLTYPE "SERVE"
-#define DROP_NAME_BALLTYPE "DROP"
-#define FLAT_NAME_BALLTYPE "FLAT"
-#define HEAVY_NAME_BALLTYPE "HEAVY"
-#define CHIP_NAME_BALLTYPE "CHIP"
-#define LOB_NAME_BALLTYPE "LOB"
-#define TOPSPIN_NAME_BALLTYPE "TOPSPIN"
-#define PASS_NAME_BALLTYPE "PASS"
-#define NONE_NAME_BALLTYPE "NONE"
-#define CUSTOM_NAME_BALLTYPE "CUSTOM"
-#define RAND_GROUND_NAME_BALLTYPE "RAND_GROUND"
-#define RAND_NET_NAME_BALLTYPE "RAND_NET"
+
+
 
 // balltype aka SHOTTYPE and ROTTYPE from from calc_ball.h
 #define BALLTYPE_SERVE 0

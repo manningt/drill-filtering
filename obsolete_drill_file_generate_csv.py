@@ -6,18 +6,25 @@ from drill_file_defines import *
 from drill_file_defines_adjunct import *
 from drill_file_parser import parse_drill_file
 
+'''
+Boomer 1 column order: dshot+i,dslev+i,drots+i,dcost+i,ddel+i,dinstr+i,dspeed+i,dspin+i,delev+i);
+'''
+
 if __name__ == "__main__":
    import argparse
    parser = argparse.ArgumentParser(description='Open drill file, parse and write .csv file')
-   parser.add_argument(dest='drill_file', type=str, help='filename of drill file')
+   parser.add_argument(dest='drill_file', type=str, nargs='?', help='filename of drill file')
    args = parser.parse_args()
 
-   if ".CMP" in args.drill_file:
-      fname = args.drill_file[:-4]
+   if args.drill_file is None:
+      fname = input("Drill filename: ").rstrip()
    else:
       fname = args.drill_file
+
+   if ".CMP" in fname:
+      fname = fname[:-4]
    # fname = "DRL973"
-   DRILL_PATH = '/Users/tom/Documents/Projects/Boomer/infrastructure/drills/'
+   DRILL_PATH = '/Users/tom/Documents/Projects/Boomer/Boomer_drills/'
    if not os.path.isfile(DRILL_PATH + fname + ".CMP"):
       print("File does not exist: {}.CMP".format(DRILL_PATH + fname))
       sys.exit(1)

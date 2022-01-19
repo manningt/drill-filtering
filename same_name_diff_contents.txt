@@ -4,34 +4,41 @@ Files DRL216.CMP and DRL218.CMP differ   <-- delay changed from 1.3, 1.5 to 1.7
 Files DRL218.CMP and DRL541.CMP differ   <-- delay changed from 1.7  back to 1.5
 Files DRL047.CMP and DRL214.CMP differ   <-- 214 has audio file removed
 Files DRL008.CMP and DRL147.CMP differ    <- Ball 5 changed from Easy to Hard; ball added at end
-Files DRL009.CMP and DRL010.CMP differ   <-- all 24 shot_types changed
-Files DRL061.CMP and DRL143.CMP differ       <-- many differences; top-spin changed to ground
+Files DRL009.CMP and DRL010.CMP differ   <-- '2-line X drill' 009: 24 RAND_GROUND; 010: variety of shot_types
+
+Files DRL001.CMP and DRL143.CMP differ       <-- many differences; top-spin changed to ground
+Files DRL061.CMP and DRL143.CMP differ       061 is a dup of 001
 Files DRL143.CMP and DRL222.CMP differ       <-- many differences; ground changed to topspin
-Files DRL240.CMP and DRL241.CMP differ   <-- start of 2-line mini tennis Boomer on
-Files DRL241.CMP and DRL242.CMP differ      <-- many differences, including descriptions
-Files DRL242.CMP and DRL243.CMP differ <- ball 1 changed from F5 to F2; ball 2: B5 to B2
+
+Files DRL240.CMP and DRL241.CMP differ   <-- '2-line mini tennis Boomer on' 240 has spin; 241 does not; more speed, less elevation in 241
+Files DRL241.CMP and DRL242.CMP differ   <-- 242 harder than 241 (speed, B5 intead of B4)
+Files DRL242.CMP and DRL243.CMP differ    <- 243 easier than 242: F5 to F2; B5 to B2
 Files DRL243.CMP and DRL245.CMP differ  <-- 245 is end of mini tennis; level changed to 2
+
 Files DRL245.CMP and DRL580.CMP differ
+580..585 are duplicates of 240..245 - 580 through 585 have been removed as dups
 Files DRL580.CMP and DRL582.CMP differ
 Files DRL582.CMP and DRL583.CMP differ
 Files DRL583.CMP and DRL585.CMP differ
 Files DRL585.CMP and DRL880.CMP differ
-Files DRL880.CMP and DRL881.CMP differ <- height reduced, spin reduced to 0, speed increased on all 11 balls
-Files DRL881.CMP and DRL882.CMP differ <- height reduced, changed from B54 to B5, speed increased on first 4 balls
-Files DRL882.CMP and DRL883.CMP differ <- ball 1 changed from F5 to F2; ball 2: B5 to B2
-Files DRL883.CMP and DRL885.CMP differ <- first 4 balls: height increased, level=2; speed reduced a small amount; delay increased
+880..885 are duplicates of 240..245 - 880 through 885 removed as dups as detected by checksum
+Files DRL880.CMP and DRL881.CMP differ 
+Files DRL881.CMP and DRL882.CMP differ 
+Files DRL882.CMP and DRL883.CMP differ 
+Files DRL883.CMP and DRL885.CMP differ 
+
 Files DRL020.CMP and DRL028.CMP differ       <-- delays decreased, audio removed
 Files DRL255.CMP and DRL891.CMP differ
-Files DRL104.CMP and DRL256.CMP differ <- score_method changed from 10/11 to (ground) and delay increased by 100 mSec.
+Files DRL104.CMP and DRL256.CMP differ <- 'Ground Kill footwork' score_method changed from 10/11 to (ground) and delay increased by 100 mSec.
 Files DRL256.CMP and DRL894.CMP differ
 Files DRL129.CMP and DRL801.CMP differ
-Files DRL039.CMP and DRL078.CMP differ
-Files DRL303.CMP and DRL304.CMP differ
+Files DRL039.CMP and DRL078.CMP differ <- 'Medium Net Beep test 30 balls' 78 has lower speed, less delay, less elevation on most the balls
+Files DRL303.CMP and DRL304.CMP differ <- 'Midcourt to backhand and fini' balls 1 & 2 had FH and BH switched; balls 3&4 the same
 Files DRL145.CMP and DRL802.CMP differ
 Files DRL193.CMP and DRL983.CMP differ
 Files DRL106.CMP and DRL273.CMP differ
 Files DRL273.CMP and DRL896.CMP differ
-Files DRL105.CMP and DRL263.CMP differ
+Files DRL105.CMP and DRL263.CMP differ < 'Volley Kill footwork' score_method changed from 23/24 to 1 (?); Elevation increased from 22 to 25
 Files DRL263.CMP and DRL895.CMP differ
 Files DRL146.CMP and DRL503.CMP differ
 Files DRL117.CMP and DRL269.CMP differ

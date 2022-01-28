@@ -1,5 +1,6 @@
 import sys
-from drill_list_w_details import *
+from drill_list_w_details import drill_list
+from score_method_mapping import boomer2_score_method_mapping
 
 for drill in drill_list:
    filename = f"../drills_csv/DRL{drill['id']}.csv"
@@ -17,8 +18,8 @@ for drill in drill_list:
    # boomer 1 row ordering: dshot+i,dslev+i,drots+i,dcost+i,ddel+i,dinstr+i,dspeed+i,dspin+i,delev+i);
    ball_params=['SHOT_TYPE', 'LEVEL', 'ROTARY_TYPE', 'SCORE_METHOD', 'DELAY', 'COMMENT', 'SPEED', 'SPIN', 'ELEVATION']
 
-   # write header row
-   f.write(",") #put in a blank column
+   # write header row; note: intentionally putting in a blank column 'A' for each ball so that they are offset
+   #   from name, desc, audit hence each parameter write starts with a , to make a new column.
    for param in ball_params:
       f.write(f",{param}")
    f.write("\n")
@@ -26,16 +27,17 @@ for drill in drill_list:
    ball_params[5] = 'AUDIO' # Drew format used AUDIO instead of COMMENT or INSTRUCTION
 
    for ball in drill['balls']:
-      #note: intentionally putting in a blank column 'A' for each ball so that they are offset from name, desc, audit
-      #      hence each parameter write starts with a , to make a new column.
       for param in ball_params:
          if param in ball:
-            f.write(f",{ball[param]}")
+            if (param is "SCORE_METHOD"):
+               f.write(f",{boomer2_score_method_mapping[int(ball[param])]}")
+            else:
+               f.write(f",{ball[param]}")
          else:
             f.write(f",")
       f.write("\n")
 
-   if drill['id'] == '020':
+   if drill['id'] == '018':
       print(f"stopped at drill: {drill['id']}")
       sys.exit()
 
